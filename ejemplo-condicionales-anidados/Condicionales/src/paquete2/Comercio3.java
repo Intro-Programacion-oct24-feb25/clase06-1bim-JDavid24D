@@ -48,6 +48,9 @@ public class Comercio3 {
         System.out.println("Ingrese el número de productos vendidos "
                 + "por favor");
         numeroProductos = entrada.nextInt();
+        System.out.println("Ingrese el porcentaje del seguro por favor");
+        porcentajeSeguro = entrada.nextDouble();
+        
         
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
