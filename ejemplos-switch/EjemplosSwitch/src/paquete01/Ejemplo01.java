@@ -27,7 +27,7 @@ public class Ejemplo01 {
         switch(cadena){
             case "Lunes":
             case "LUNES":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s\n", cadena);
                 break;
             
             case "Martes":
@@ -39,13 +39,13 @@ public class Ejemplo01 {
             case "Viernes":
             case "VIERNES":
             case "viernes":
-                System.out.printf("%s", cadena);
+                System.out.printf("%s\n", cadena);
                 break;
             
             case "Domingo":
             case "DOMINGO":
                 System.out.printf("%s, es el séptimo día "
-                        + "de la semana", cadena);
+                        + "de la semana\n", cadena);
                 break;
                 
             default:
