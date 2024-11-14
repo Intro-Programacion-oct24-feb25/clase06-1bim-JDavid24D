@@ -24,7 +24,11 @@ public class Ejemplo031 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese el nombre de una ciudad del Ecuador");
+        String nombre;
+        int edad;
+        String universidad;
+        
+        System.out.println("Ingrese el nombre y apellido");
         String nombre = entrada.nextLine();
         // nombre = "atacames"
         char valor = nombre.charAt(0); // obtener el primer caracter de una
@@ -38,8 +42,8 @@ public class Ejemplo031 {
             case 'i':
             case 'o':
             case 'u':
-                System.out.printf("Nombre con inicial %s de %s\n", 
-                        valor, nombre.toLowerCase());
+                System.out.printf("%s con edad %d, es estudiante de %s\n", 
+                        nombre.toUpperCase(), edad, universidad);
                 break;
             
             default:
