@@ -22,15 +22,18 @@ public class Ejemplo01 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese el nombre del día de la semana");
         String cadena = entrada.nextLine();
+        cadena = cadena.toUpperCase();
         
         switch(cadena){
             case "Lunes":
+            case "LUNES":
                 System.out.printf("%s", cadena);
                 break;
             
             case "Martes":
             case "martes":
-                System.out.printf("%s", cadena);
+            case "MARTES":
+                System.out.printf("%s\n", cadena);
                 break;
             
             case "Viernes":
@@ -40,6 +43,7 @@ public class Ejemplo01 {
                 break;
             
             case "Domingo":
+            case "DOMINGO":
                 System.out.printf("%s, es el séptimo día "
                         + "de la semana", cadena);
                 break;
